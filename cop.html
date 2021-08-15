@@ -26,12 +26,9 @@
             }
             .logotitle{
                 text-align: center;
-                 padding:0px!important;
-                font-size: 37px!important; 
-                display: inline-block;
-            }
-            .log2{
-                display: none;
+                padding:8px!important;
+                font-size: 169%!important;
+
             }
             .logo{
                 text-align: center;
@@ -42,7 +39,8 @@
         }
 
         .ht1{
-            height: 490px;
+            max-height: 490px;
+            text-align: center;
         }
     
         .ht{
@@ -91,6 +89,11 @@
     margin-left: 3px;
     font-weight: bold;
     margin-bottom: 2px;
+    display: inline-flex;
+    justify-content: center;
+}
+.common{
+    background-color: ghostwhite;
 }
       
       </style>
@@ -105,31 +108,31 @@
       tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
-              <div class="modal-header" style="background-color: black;">
-                <div class=" bg-light logo order-md-2" id="staticBackdropLabel" style="border-radius: 10px;">
-                  <span class='logotitle text-danger'> IQ CLASSES <span class="log2">-</span></span> 
+              <div class="modal-header common">
+                <div class=" bg-light logo order-md-2" id="staticBackdropLabel" style="border: 1px solid red;border-radius: 10px;">
+                  <span class='logotitle text-danger'> IQ CLASSES -</span> 
                   <span class='logotitle text-danger'>ONLINE TEST</span> 
                 </div>
-                <div class=" bg-info order-md-1" id="staticBackdropLabel" style="border-radius: 10px;">
-                    <span class='testtitle' id='TestSubjectName'>Subject : Physics</span> 
-                    <span class='testtitle' id='TestChapterName'>Chapter : Force</span> 
+                <div class=" bg-danger order-md-1" id="staticBackdropLabel" style="border-radius: 10px;">
+                    <span class='testtitle text-white' id='TestSubjectName'>Subject : Physics</span> 
+                    <span class='testtitle text-white' id='TestChapterName'>Chapter : Force</span> 
                 </div>
-                <div class="timerr bg-info order-md-3">
+                <div class="timerr bg-danger text-white order-md-3">
                   <span class="timertext"><i class="fas fa-user-clock"></i> | </span>
                   <span id="timer"></span>
                 </div>                
               </div>
-              <div class="modal-body" style="background-color: rgb(221, 196, 196);">
+              <div class="modal-body">
                  <div class="row">
                      <div class="col-lg-10 ps-0">
-                        <div id="paperscreen" class="border border-dark rounded bg-warning ht">
+                        <div id="paperscreen" class="border border-dark rounded common ht">
                             <h2 class="p-2"> <u> Question <span id="QNo">30<span> </span></span></u></h2>
                             <h4 class="p-2">In the figure P(5,-3) and Q(3,y) are the points of trisection 
                                 of the line segment joining A(7,-2) and B (1,-5). Then y equals
                             </h4>
                             <div class="row ">
                                 <div class="col-md-5 ovr1 order-md-2">
-                                    <img class="gg" src="image1.jpeg">
+                                    <img class="gg img img-fluid" src="273.PNG">
                                  </div>
                         <div class="col-md-7 ovr1 order-md-1 fw-bold cc">
                     <div class="form-check  mt-5 ms-3">
@@ -182,13 +185,13 @@
                                </div>
                                </div></div>
                          <div class="mt-1 pb-1">
-                         <button type="button" class="fnt ntb btn btn-info border border-dark">BACK</button>
-                         <button type="button" class="fnt ntb btn btn-info float-end border border-dark">NEXT</button>
+                         <button type="button" class="fnt ntb btn btn-danger border border-dark">BACK</button>
+                         <button type="button" class="fnt ntb btn btn-danger float-end border border-dark">NEXT</button>
                         </div>
                      </div>
       
-                     <div class="col-lg-2 p-0 "> 
-                        <div id="QPalette" class="rounded ht1 ovr bg-dark">
+                     <div class="col-lg-2 ps-0"> 
+                        <div id="QPalette" class="rounded ht1 ovr common">
                             <button class="qtb btn btn-light dire"> 1</button>
                             <button class="qtb btn btn-light dire"> 2</button>
                             <button class="qtb btn btn-light dire"> 3</button>
